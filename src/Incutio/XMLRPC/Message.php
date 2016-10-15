@@ -13,12 +13,12 @@ use Incutio\XMLRPC\Object\Date;
  */
 class Message
 {
-    protected $message;
-    protected $messageType;  // methodCall / methodResponse / fault
-    protected $faultCode;
-    protected $faultString;
-    protected $methodName;
-    protected $params;
+    public $message;
+    public $messageType;  // methodCall / methodResponse / fault
+    public $faultCode;
+    public $faultString;
+    public $methodName;
+    public $params;
 
     // Current variable stacks
     private $arraystructs = array();   // The stack used to keep track of the current array/struct

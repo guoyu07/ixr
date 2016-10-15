@@ -3,6 +3,7 @@
 namespace Incutio\XMLRPC\Client;
 
 use Incutio\XMLRPC\Message;
+use Incutio\XMLRPC\Object\Request;
 
 /**
  * IXR_Client
