@@ -12,8 +12,8 @@ use Incutio\XMLRPC\Object;
  */
 class Error implements Object
 {
-    protected $code;
-    protected $message;
+    public $code;
+    public $message;
 
     public function __construct($code, $message)
     {
