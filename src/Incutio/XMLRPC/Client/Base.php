@@ -21,7 +21,7 @@ class Base
     protected $useragent;
     protected $response;
     protected $message = false;
-    protected $debug = false;
+    public $debug = false;
     protected $timeout;
 
     // Storage place for an error message
