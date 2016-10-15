@@ -110,7 +110,7 @@ class Introspection extends Base
                     break;
                 case 'date':
                 case 'dateTime.iso8601':
-                    if (!is_a($arg, 'IXR_Date')) {
+                    if (!is_a($arg, '\\Incutio\\XMLRPC\\Object\\Date')) {
                         $ok = false;
                     }
                     break;

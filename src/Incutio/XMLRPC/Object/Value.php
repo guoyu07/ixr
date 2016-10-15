@@ -52,10 +52,10 @@ class Value implements Object
         }
 
         // Deal with IXR object types base64 and date
-        if (is_object($this->data) && is_a($this->data, 'IXR_Date')) {
+        if (is_object($this->data) && is_a($this->data, '\\Incutio\\XMLRPC\\Object\\Date')) {
             return static::DATE;
         }
-        if (is_object($this->data) && is_a($this->data, 'IXR_Base64')) {
+        if (is_object($this->data) && is_a($this->data, '\\Incutio\\XMLRPC\\Object\\Base64')) {
             return static::BASE64;
         }
 

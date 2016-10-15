@@ -86,7 +86,7 @@ class Base
         $result = $this->call($this->message->methodName, $this->message->params);
 
         // Is the result an error?
-        if (is_a($result, 'IXR_Error')) {
+        if (is_a($result, '\\Incutio\\XMLRPC\\Object\\Error')) {
             $this->error($result);
         }
 
@@ -226,7 +226,7 @@ EOD;
             } else {
                 $result = $this->call($method, $params);
             }
-            if (is_a($result, 'IXR_Error')) {
+            if (is_a($result, '\\Incutio\\XMLRPC\\Object\\Error')) {
                 $return[] = array(
                     'faultCode' => $result->code,
                     'faultString' => $result->message
